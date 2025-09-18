@@ -1,9 +1,9 @@
 <div class="related-wrapper gh-outer">
-    {{#get "posts" limit="4" filter="tags:[{{post.tags}}]+id:-{{post.id}}" include="tags,authors" as |related|}}
+    {{#get "posts" limit="3" filter="tags:[{{post.tags}}]+id:-{{post.id}}" include="tags,authors" as |related|}}
         {{#if related}}
         <section class="related-posts gh-inner">
             <h3 class="related-title">
-                <span class="text">You might also like...</span>
+                <span class="text">猜你会感兴趣...</span>
             </h3>
             <div class="post-feed">
                 {{#foreach related}}

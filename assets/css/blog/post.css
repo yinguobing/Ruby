@@ -1,6 +1,6 @@
 .post-feed {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 32px;
 }
 
@@ -37,7 +37,7 @@
 
 .post-title {
     margin-bottom: 0;
-    font-size: 1.6rem;
+    font-size: 2rem;
     line-height: 1.35;
     word-break: break-word;
 }
@@ -48,7 +48,7 @@
 
 .post-excerpt {
     margin-top: 12px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 1.6;
     word-break: break-word;
 }
