@@ -6,6 +6,17 @@
     margin-top: 0;
 }
 
+/* Remove top margin when article follows cover */
+.gh-cover.gh-outer+main .gh-article {
+    margin-top: 0;
+}
+
+/* Ensure cover starts at top */
+.gh-cover.gh-outer {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .gh-article-meta {
     margin-bottom: 12px;
     font-size: 1.2rem;
@@ -30,4 +41,119 @@
 
 .gh-article-image {
     grid-column: main-start / main-end;
+}
+
+/* Full screen cover */
+
+.gh-cover {
+    --cover-height: 50vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+.post-template .gh-cover {
+    --cover-height: 100vh;
+
+    align-items: flex-end;
+    padding-top: 120px;
+    padding-bottom: 0;
+    margin-bottom: -56px;
+    background-color: transparent;
+    height: var(--cover-height);
+    overflow: hidden;
+}
+
+.post-template .gh-cover::before {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    content: "";
+    background-color: var(--color-black, #000);
+    opacity: 0;
+    transition: opacity 1.5s ease;
+    pointer-events: none;
+}
+
+.post-template .gh-cover.loading::before {
+    opacity: 0.5;
+}
+
+.post-template .gh-cover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1.5s ease;
+    transform: scale(1);
+    z-index: 1;
+}
+
+.post-template .gh-cover.loading .gh-cover-image {
+    transform: scale(1.02);
+}
+
+.gh-cover-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 720px;
+    margin-top: 100px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.post-template .gh-cover-content {
+    position: sticky;
+    bottom: 80px;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin-bottom: 64px;
+    text-align: left;
+}
+
+.gh-cover-content .gh-article-tag {
+    color: var(--white-color, #fff);
+}
+
+.gh-cover-title {
+    font-size: 7.2rem;
+    color: var(--white-color, #fff);
+    word-break: break-word;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.post-template .gh-cover-title {
+    font-size: 7.2rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* Template specific styles */
+
+.has-full-image .gh-article-excerpt {
+    margin-bottom: -8px;
+}
+
+.has-wide-image .gh-article-image {
+    grid-column: main-start / main-end;
+}
+
+.has-wide-image .gh-article-excerpt {
+    margin-bottom: 0;
+}
+
+.is-head-transparent .gh-article-header {
+    padding-top: 100px;
+    position: relative;
+    justify-items: start;
+    background-color: transparent;
 }

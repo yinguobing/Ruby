@@ -14,6 +14,12 @@
     padding-block: 0;
 }
 
+/* Remove padding when cover is present */
+.has-full-image .site-content,
+.has-wide-image .site-content {
+    padding-top: 0;
+}
+
 @media (min-width: 992px) {
     .related-column {
         order: 1;
