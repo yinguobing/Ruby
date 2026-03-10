@@ -11,6 +11,11 @@
 }
 
 .gh-head a {
+    color: #333;
+}
+
+.has-cover .gh-head a,
+.has-feature .gh-head a {
     color: white;
 }
 
