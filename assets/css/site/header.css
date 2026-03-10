@@ -5,6 +5,11 @@
     right: 0;
 }
 
+.is-head-stacked .gh-head {
+    position: absolute;
+    z-index: 90;
+}
+
 .gh-head a {
     color: white;
 }
