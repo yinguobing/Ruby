@@ -6,11 +6,6 @@
     margin-top: 0;
 }
 
-/* Remove top margin when article follows cover */
-.gh-cover.gh-outer+main .gh-article {
-    margin-top: 50px;
-}
-
 /* Ensure cover starts at top */
 .gh-cover.gh-outer {
     margin-top: 0;
@@ -62,7 +57,6 @@
     align-items: flex-end;
     padding-top: 120px;
     padding-bottom: 0;
-    margin-bottom: -56px;
     background-color: transparent;
     height: var(--cover-height);
     overflow: hidden;
