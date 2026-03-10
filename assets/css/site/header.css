@@ -1,5 +1,8 @@
 .gh-head {
     background-color: transparent;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 
 .gh-head a {
