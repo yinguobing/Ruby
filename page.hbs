@@ -1,4 +1,5 @@
-{{!< default}} {{#block "body_class" }}{{#if feature_image}}has-feature{{/if}}{{/block}} <main class="site-main">
+{{!< default}} {{#contentFor "body_class" }}{{#if feature_image}}has-feature{{/if}}{{/contentFor}} <main
+    class="site-main">
 
     {{#post}}
     <article class="gh-article {{post_class}}">
