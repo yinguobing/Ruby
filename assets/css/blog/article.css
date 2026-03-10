@@ -8,7 +8,7 @@
 
 /* Remove top margin when article follows cover */
 .gh-cover.gh-outer+main .gh-article {
-    margin-top: 0;
+    margin-top: 50px;
 }
 
 /* Ensure cover starts at top */
