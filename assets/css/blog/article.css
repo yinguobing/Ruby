@@ -57,7 +57,7 @@
     align-items: flex-end;
     padding-top: 120px;
     padding-bottom: 0;
-    background-color: transparent;
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
     height: var(--cover-height);
     overflow: hidden;
 }
