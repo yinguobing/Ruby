@@ -16,7 +16,8 @@
 
 /* Remove padding when cover is present */
 .has-full-image .site-content,
-.has-wide-image .site-content {
+.has-wide-image .site-content,
+.has-feature-image .site-content {
     padding-top: 0;
 }
 
