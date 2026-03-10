@@ -14,8 +14,8 @@
     color: #333;
 }
 
-.has-cover .gh-head a,
-.has-feature .gh-head a {
+.gh-head.has-cover a,
+.gh-head.has-feature a {
     color: white;
 }
 
