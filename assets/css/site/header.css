@@ -3,6 +3,10 @@
     color: white;
 }
 
+.gh-head a {
+    color: white;
+}
+
 .gh-head-menu,
 .gh-head-actions {
     font-size: 1.5rem;
