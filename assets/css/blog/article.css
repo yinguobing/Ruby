@@ -151,3 +151,8 @@
     justify-items: start;
     background-color: transparent;
 }
+
+.is-head-transparent .gh-head-menu::before,
+.is-head-transparent .gh-head-menu::after {
+    background-color: rgba(255, 255, 255, 0.2);
+}
