@@ -57,11 +57,9 @@
 
 .post-template .gh-cover {
     --cover-height: 100vh;
-
     align-items: flex-end;
     padding-top: 120px;
     padding-bottom: 0;
-    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
     height: var(--cover-height);
     overflow: hidden;
 }
@@ -190,17 +188,6 @@
     margin-bottom: 0;
     background-color: rgba(0, 0, 0, 0.4);
     position: relative;
-}
-
-.post-template .gh-cover {
-    --cover-height: 100vh;
-
-    align-items: flex-end;
-    padding-top: 120px;
-    padding-bottom: 0;
-    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
-    height: var(--cover-height);
-    overflow: hidden;
 }
 
 .post-template .gh-cover::before {
